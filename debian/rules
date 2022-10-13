@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	rm -f debian/node-fs-extra/usr/lib/nodejs/fs-extra/lib/copy/__tests__/ncp/README.md

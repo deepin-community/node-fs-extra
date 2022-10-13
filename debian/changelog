@@ -1,0 +1,195 @@
+node-fs-extra (10.0.0+~9.0.13-1) unstable; urgency=medium
+
+  * Fix d/watch (again).
+  * New upstream release.
+  * Mark the package Multi-Arch: foreign following hinter.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 26 Oct 2021 16:36:56 +0200
+
+node-fs-extra (10.0.0+~9.0.12-1) unstable; urgency=medium
+
+  * Fix d/watch.
+  * Bump standards-version to 4.6.0.
+  * New upstream version 10.0.0+~9.0.12.
+  * Refresh patch removing dep on at-least-node.
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 27 Aug 2021 14:25:00 +0200
+
+node-fs-extra (9.0.1+~9.0.6-1) unstable; urgency=medium
+
+  * Team upload
+  * Add ctype=nodejs to component(s)
+  * New upstream version 9.0.1+~9.0.6 (updates typescript definitions)
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 25 Dec 2020 13:36:11 +0100
+
+node-fs-extra (9.0.1+~9.0.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.1
+  * Update typescript definitions to version 9.0.4
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 27 Nov 2020 08:28:56 +0100
+
+node-fs-extra (9.0.1+~9.0.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Use dh-sequence-nodejs auto test & install
+  * Embed @types/fs-extra and repack
+  * Add a break against node-typescript-types < 20201105-1~
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Nov 2020 11:09:04 +0100
+
+node-fs-extra (9.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Use js team's new address.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 08 Jun 2020 14:05:19 +0200
+
+node-fs-extra (9.0.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Remove obsolete field Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Julien Puydt ]
+  * Bump std-vers to 4.5.0.
+  * Ne upstream release.
+  * Add no_at_least_node.patch to avoid a trivial dependency.
+  * Install in /usr/share/nodejs and not /usr/lib/nodejs.
+  * Add running (parts of) upstream test suite.
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 27 Mar 2020 10:42:06 +0100
+
+node-fs-extra (8.1.0-2) unstable; urgency=medium
+
+  * Bump dh compat to 12 and drop d/compat.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 27 Jul 2019 18:44:27 +0200
+
+node-fs-extra (8.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.4.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 08 Jul 2019 08:51:20 +0200
+
+node-fs-extra (8.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.3.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sun, 12 May 2019 10:56:45 +0200
+
+node-fs-extra (7.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.2.1.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 08 Nov 2018 15:30:18 +0100
+
+node-fs-extra (7.0.0-2) unstable; urgency=medium
+
+  * Point d/watch to /releases instead of /tags.
+  * Bump s-d-ver to 4.2.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 16 Aug 2018 08:10:59 +0200
+
+node-fs-extra (7.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 23 Jul 2018 07:45:03 +0200
+
+node-fs-extra (6.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 11 May 2018 09:55:54 +0200
+
+node-fs-extra (6.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh packaging:
+    - Bump dh compat to 11.
+    - Bump std-ver to 4.1.4.
+    - Use my debian.org mail address.
+    - Change Vcs-* fields to salsa.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 02 May 2018 20:51:40 +0200
+
+node-fs-extra (5.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 21 Feb 2018 18:39:58 +0100
+
+node-fs-extra (4.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update packaging:
+    - Bump std-ver to 4.1.2.0.
+    - Move to section javascript.
+    - Set priority to optional.
+    - Use https in d/copyright's Format.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sat, 09 Dec 2017 08:58:06 +0100
+
+node-fs-extra (4.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump required version of node-jsonfile following upstream.
+  * Bump std-ver to 4.1.0.
+  * Bump d/watch to version 4.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 15 Sep 2017 07:40:47 +0200
+
+node-fs-extra (4.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 06 Aug 2017 08:57:24 +0200
+
+node-fs-extra (4.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 23 Jul 2017 12:51:15 +0200
+
+node-fs-extra (3.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump standards-version to 4.0.0.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 28 Jun 2017 08:00:44 +0200
+
+node-fs-extra (2.1.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 20 Apr 2017 18:18:30 +0200
+
+node-fs-extra (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 20 Jan 2017 09:29:01 +0100
+
+node-fs-extra (1.0.0-1) unstable; urgency=medium
+
+  [ Bas Couwenberg ]
+  * Initial packaging.
+
+  [ Julien Puydt ]
+  * Bump dh compat to 10.
+  * Bump standards-version to 3.9.8.
+  * Use https for Vcs-* fields.
+  * Add myself to uploaders.
+  * New upstream release. (Closes: #843350)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 06 Nov 2016 09:44:32 +0100

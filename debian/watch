@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-fs-extra-$1.tar.gz/ \
+https://github.com/jprichardson/node-fs-extra/tags .*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,component=types-fs-extra,pgpmode=none" \
+ https://registry.npmjs.org/@types/fs-extra https://registry.npmjs.org/@types/fs-extra/-/fs-extra-([\d\.]+)@ARCHIVE_EXT@ group

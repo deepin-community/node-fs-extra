@@ -1,0 +1,33 @@
+Description: remove the need for the at-least-node dependency
+ This patches out tests on nodejs versions ; we already have what
+ is needed in stable for nodejs 10, and the nodejs 12 in
+ experimental will be right too.
+Author: Julien Puydt
+Forwarded: Debian-specific
+
+--- node-fs-extra.orig/lib/fs/__tests__/multi-param.test.js
++++ node-fs-extra/lib/fs/__tests__/multi-param.test.js
+@@ -4,14 +4,10 @@
+ const path = require('path')
+ const crypto = require('crypto')
+ const os = require('os')
+-const atLeastNode = require('at-least-node')
+ const fs = require('../..')
+ 
+ const SIZE = 1000
+ 
+-// Used for tests on Node 12.9.0+ only
+-const describeNode12 = atLeastNode('12.9.0') ? describe : describe.skip
+-
+ describe('fs.read()', () => {
+   let TEST_FILE
+   let TEST_DATA
+@@ -153,7 +149,7 @@
+   })
+ })
+ 
+-describeNode12('fs.writev()', () => {
++describe('fs.writev()', () => {
+   let TEST_FILE
+   let TEST_DATA
+   let TEST_FD

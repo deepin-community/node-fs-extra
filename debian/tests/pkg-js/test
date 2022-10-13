@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+# klaw-sync is needed in some directories, so lib/**/__tests__ won't do the trick
+
+OK="lib/empty lib/mkdirs lib lib/output lib/json lib/ensure lib/util lib/path-exists lib/remove"
+
+for toto in $OK; do
+  mocha $toto/__tests__/
+done
