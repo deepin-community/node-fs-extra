@@ -1,33 +1,33 @@
 Source: node-fs-extra
-Section: javascript
-Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@alioth-lists.debian.net>
 Uploaders: Julien Puydt <jpuydt@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
 Build-Depends: debhelper-compat (= 13)
- , dh-sequence-nodejs
+ , dh-sequence-nodejs (>= 0.11.0~)
  , mocha <!nocheck>
- , node-graceful-fs (>= 4.1.2) <!nocheck>
- , node-jsonfile (>= 4.0.0) <!nocheck>
+ , node-graceful-fs <!nocheck>
+ , node-jsonfile <!nocheck>
  , node-klaw <!nocheck>
- , node-universalify <!nocheck>
  , node-proxyquire <!nocheck>
+ , node-universalify <!nocheck>
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-tram/node-fs-extra
 Vcs-Git: https://salsa.debian.org/js-team/node-fs-extra.git
 Homepage: https://github.com/jprichardson/node-fs-extra
-Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-fs-extra
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
- , node-graceful-fs (>= 4.1.2)
- , node-jsonfile (>= 4.0.0)
+ , node-graceful-fs
+ , node-jsonfile
  , node-klaw
  , node-universalify
-Provides: ${nodejs:Provides}
 Breaks: node-typescript-types (<< 20201105-1~)
+Provides: ${nodejs:Provides}
 Description: fs-extra contains methods not included in the Node.js fs module
  The fs-extra Node.js module adds a few extra file system methods that aren't
  included in the native fs module. It is a drop in replacement for fs.
