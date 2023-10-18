@@ -5,8 +5,8 @@ Description: remove the need for the at-least-node dependency
 Author: Julien Puydt
 Forwarded: Debian-specific
 
---- node-fs-extra.orig/lib/fs/__tests__/multi-param.test.js
-+++ node-fs-extra/lib/fs/__tests__/multi-param.test.js
+--- a/lib/fs/__tests__/multi-param.test.js
++++ b/lib/fs/__tests__/multi-param.test.js
 @@ -4,14 +4,10 @@
  const path = require('path')
  const crypto = require('crypto')

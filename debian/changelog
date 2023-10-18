@@ -1,3 +1,27 @@
+node-fs-extra (10.1.0+~9.0.13-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 21 Apr 2022 10:03:53 +0200
+
+node-fs-extra (10.0.1+~9.0.13-2) unstable; urgency=medium
+
+  * Team upload
+  * Add test directories in debian/tests/pkg-js/files, fixes autopkgtest
+    (Closes: #1007821)
+
+ -- Yadd <yadd@debian.org>  Thu, 17 Mar 2022 15:16:32 +0100
+
+node-fs-extra (10.0.1+~9.0.13-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix filenamemangle
+  * New upstream version 10.0.1+~9.0.13
+  * Refresh patch
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Sun, 06 Mar 2022 09:34:52 +0100
+
 node-fs-extra (10.0.0+~9.0.13-1) unstable; urgency=medium
 
   * Fix d/watch (again).

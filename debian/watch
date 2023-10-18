@@ -1,7 +1,7 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-fs-extra-$1.tar.gz/ \
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-fs-extra-$1/ \
 https://github.com/jprichardson/node-fs-extra/tags .*/v?([\d\.]+).tar.gz group
 
 # It is not recommended use npmregistry. Please investigate more.
